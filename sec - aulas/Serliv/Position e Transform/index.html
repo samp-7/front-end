@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example {
+            width: 150px;
+            height: 150px;
+            background-color: goldenrod;
+            transform: translate(50%, 50%);
+        }
+
+        .example2 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            top: 50%;
+            left: 30%;
+        }
+
+        .example3 {
+            width: 50%;
+            overflow: hidden;
+            background-color: lightseagreen;
+            border: 2px solid black;
+        
+        }
+
+        .example3-son {
+            background-color: yellowgreen;
+            transform: translate(80%, 24px);
+        }
+
+        .example4 {
+            width: 50%;
+            overflow: hidden;
+            background-color: lightseagreen;
+            border: 2px solid black;
+        
+        }
+
+        .example4-son {
+            background-color: yellowgreen;
+            transform: rotate(25deg);
+        }
+
+        .example5 {
+            width: 50%;
+            overflow: hidden;
+            background-color: lightseagreen;
+            border: 2px solid black;
+        
+        }
+
+        .example5-son {
+            background-color: yellowgreen;
+            transform: rotate(30deg);
+            transform-origin: left top;
+        }
+
+        .example6 {
+            width: 50%;
+            overflow: hidden;
+            background-color: lightseagreen;
+            border: 2px solid black;
+        
+        }
+
+        .example6-son {
+            background-color: yellowgreen;
+            transform: rotate(30deg) translate(30px);
+
+        }.example7 {
+            width: 50%;
+            overflow: hidden;
+            background-color: lightseagreen;
+            border: 2px solid black;
+        
+        }
+
+        .example7-son {
+            background-color: yellowgreen;
+            transform: translate(30px) rotate(30deg);
+        }
+
+        .example8 {
+            width: 50px;
+            height: 50px;
+            background-color: lightsalmon;
+            transform: skew(-40deg, 50deg);
+        }
+
+        .example9 {
+            width: 100px;
+            height: 100px;
+            background-color: lightslategray;
+            transform: scale(.5) translateX(50%);
+            transition: transform .5s;
+        }
+
+        .example9:hover {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <h1>TRANSLATE</h1>
+    <h2>transform: translate e position: relative</h2>
+    <div class="example">PORRA</div>
+    <div class="example2">CARALHO</div>
+    <hr>
+    <h1>TRANSLATE (80%, 24px)</h1>
+    <div class="example3"> 
+        <div class="example3-son">ANYBODY</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ullam omnis possimus esse nostrum praesentium optio animi quia aliquid debitis quod dignissimos, error quidem voluptas harum fugiat rerum molestias?</p>
+    </div>
+    <hr>
+    <h1>ROTATE</h1>
+    <div class="example4">
+        <div class="example4-son">ANYBODY</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ullam omnis possimus esse nostrum praesentium optio animi quia aliquid debitis quod dignissimos, error quidem voluptas harum fugiat rerum molestias?</p>
+    </div>
+    <hr>
+    <h1>ROTATE</h1>
+        <h2>transform-origin: left top</h2>
+    <div class="example5">
+        <div class="example5-son">ANYBODY</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ullam omnis possimus esse nostrum praesentium optio animi quia aliquid debitis quod dignissimos, error quidem voluptas harum fugiat rerum molestias?</p>
+    </div>
+    <hr>
+    <h1>rotate(30deg) translate(30px)</h1>
+    <div class="example6">
+        <div class="example6-son">ANYBODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ullam omnis possimus esse nostrum praesentium optio animi quia aliquid debitis quod dignissimos, error quidem voluptas harum fugiat rerum molestias?</p>
+    </div>
+    <hr>
+    <h1>translate(30px) rotate(30deg) </h1>
+    <div class="example7">
+        <div class="example7-son">ANYBODYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero ullam omnis possimus esse nostrum praesentium optio animi quia aliquid debitis quod dignissimos, error quidem voluptas harum fugiat rerum molestias?</p>
+    </div>
+    <hr>
+    <h1>SKEW</h1>
+    <div class="example8">PINTO</div>
+    <hr>
+    <h1>SCALE</h1>
+    <h2>transform: scale(.5) translateX(50%)</h2>
+    <div class="example9">ROLA</div>
+</body>
+</html>

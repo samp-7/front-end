@@ -1,0 +1,21 @@
+.example {
+    color: white;
+}
+
+.example-item {
+    width: 33.333%;
+    height: 150px;
+    display: inline;
+}
+
+.example-item_first {
+    background-color: blueviolet;
+}
+
+.example-item_second {
+    background-color: brown;
+}
+
+.example-item_third {
+    background-color: chartreuse;
+}

@@ -1,0 +1,16 @@
+* { 
+    --color-first: darkmagenta;
+    --cor-principal: darkcyan; 
+} 
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-first);
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}

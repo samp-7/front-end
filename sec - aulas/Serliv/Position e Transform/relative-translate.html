@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 5px solid blue;
+            margin: 20px;
+        }
+
+        .box:nth-child(even) {
+            border-color: red;
+        }
+
+        .box2 {
+            position: relative;
+            /* top: 40px; */
+            left: 150px; 
+        }
+
+        .box5 {
+            transform: translateX(50%);
+            width: fit-content;
+        }
+
+        p {
+             position: absolute;
+             bottom: 0;
+             background-color: rgba(0, 0, 0, 0.623);
+             color: white;
+             margin: 0;
+             padding: 16px;
+             transform: translateY(100%);
+             opacity: 0;
+             transition: transform .3s ease-in-out;
+        }
+
+        .container:hover p {
+            transform: translateY(0%);
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div> 
+    <hr>
+    <div class="container">
+        <div class="box box4">Box 1</div>
+        <div class="box box5">Box 2</div>
+        <div class="box box6">Box 3</div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, cumque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, ullam.</p>
+    </div>
+   
+</body>
+</html>

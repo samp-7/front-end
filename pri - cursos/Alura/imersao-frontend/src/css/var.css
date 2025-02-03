@@ -1,0 +1,10 @@
+:root {
+    --font: "DM Sants", sans-serif;
+    --branco: white;
+    --cinza: #121212;
+    --cinza-claro: #b3b3b3;
+    --cinza-escuro: #242424;
+    --preto: black;
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,07);
+}

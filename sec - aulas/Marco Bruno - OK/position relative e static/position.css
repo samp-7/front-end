@@ -1,0 +1,30 @@
+.elementExample {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.elementExample_first {
+    background-color: blue;
+    position: relative;
+    top: 200px;
+}
+
+.elementExample_last {
+    background-color: blueviolet;
+    position: relative;
+
+    /* colocando o mesmo position deixa eles no mesmo nivel */
+}
+
+.elementExample_isActive {
+    z-index: 1;
+
+    /*  determinando quem vai pra frente e quem vai pra  tras */
+}
+
+/* mudar a posicao inicial do html (static) */

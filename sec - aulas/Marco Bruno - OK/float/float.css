@@ -1,0 +1,37 @@
+.elementExample {
+    width: 400px;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.elementExample_first {
+    background-color: blue;
+    float: right;
+    
+}
+
+.elementExample_last {
+    background-color: blueviolet;
+    float: left;
+
+    /* float cria um novo contexto (? e nao fica sobre um conteudo */
+    /* da pra recuprar a altura e largura do pai configurando um overflow na div pai */
+    /* diminuindo o tamanho da tela, quebra a linha  */
+    /* clear pode ser usado pra quebrar linha tambem, dependendo do contexto */
+}
+
+article {
+    background-color: chocolate;
+    overflow: hidden;
+
+    /* overflow hidden esconde elementos que vazam width e height */
+    /* da pra usar quando preciso colocar background color em alguma coisa mesmo tendo elementos flutuando (eu nao sei se entendi isso exatamente mas ok) */
+}
+
+p {
+    clear: both;
+    /* verifica se tem elementos flutuando e desce */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgba(47, 79, 79, 0.897);
+        }
+
+        .container {
+            position: relative;
+            width: 340px;
+            height: 400px;
+        }
+
+        .card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            padding: 2em;
+            background-color: darkslategray;
+        }
+
+        .card h1 {
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+        }
+
+        .card p {
+            color: rgba(255, 255, 255, 0.603);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .card::after, .card::before {
+            content: '';
+            position: absolute;
+            background-image: conic-gradient( from var(--angle), transparent, red);
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            padding: 3px;
+            border-radius: 10px;
+            animation: 3s spin linear infinite;
+        }
+
+        .card::before {
+            filter: blur(1.5rem);
+            opacity: 0.8;
+        }
+
+       @keyframes spin {
+            from{
+                --angle: 0deg;
+            }
+
+            to {
+                --angle: 360deg;
+            }
+        
+        }
+
+        @property --angle{
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Animate Border</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos numquam sint molestias odio consectetur nulla natus itaque maxime dolorum autem eveniet architecto qui deserunt quia, quas error aliquid nostrum ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eius, maxime exercitationem reprehenderit voluptas repellend.</p>
+        </div>
+    </div>
+</body>
+</html>

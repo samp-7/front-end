@@ -1,0 +1,42 @@
+.elementExample {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+.elementExample_first {
+    position: absolute; 
+    /* position absolute usa o tamanho da tela */
+    right: 0;
+    background-color: blue;
+}
+
+.elementExample_second {    
+    background-color: darkorchid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: translate(-50%, -50%);
+    /* translateX pega metade da largura do elemento e o translateY pega a altura */
+}
+
+.elementExample_last {
+    /* pro filho respeitar o pai, o pai deve ter um position diferente de static */
+    position: absolute;
+    background-color: blueviolet;
+}
+
+.elementExample-internal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+}
