@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: darkblue;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    background-color: darkkhaki;
+    margin: 10px;
+    text-align: center;
+    color: darkblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+    
+
+.item2 {
+    align-self: flex-start;
+
+}
